@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="HIT Gaming Club - tournaments, workshops and community for student gamers." />
+        <title>Home | HIT Gaming Club</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="container">
+                <a class="logo" href="index.html">HIT<span>GAMING</span></a>
+                <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="join.html">Join / Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <h1>Press Start.<br /><span>Play Together.</span></h1>
+                    <p class="lead">
+                        The HIT Gaming Club is a home for every student gamer on campus - from casual players to
+                        competitive esports hopefuls and aspiring game developers.
+                    </p>
+                    <a class="btn" href="join.html">Join the Club</a>
+                    <a class="btn outline" href="events.html">See Events</a>
+                    <p class="next-label" id="nextLabel">Next event: <strong id="nextName">Loading...</strong></p>
+                    <div class="countdown" id="countdown">
+                        <div><strong id="cdDays">0</strong><small>Days</small></div>
+                        <div><strong id="cdHours">0</strong><small>Hours</small></div>
+                        <div><strong id="cdMins">0</strong><small>Minutes</small></div>
+                        <div><strong id="cdSecs">0</strong><small>Seconds</small></div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="stats">
+                        <div><strong id="memberCount">120+</strong>Members</div>
+                        <div><strong>12</strong>Events a year</div>
+                        <div><strong>6</strong>Game titles</div>
+                        <div><strong>2024</strong>Founded</div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <h2>What we <span>do</span></h2>
+                    <div class="grid three">
+                        <div class="card">
+                            <div class="icon">&#127942;</div>
+                            <h3>Tournaments</h3>
+                            <p>Weekly and seasonal competitions in football, racing, fighting and strategy titles.</p>
+                        </div>
+                        <div class="card">
+                            <div class="icon">&#128187;</div>
+                            <h3>Workshops</h3>
+                            <p>Learn game design, development and streaming from senior students and guests.</p>
+                        </div>
+                        <div class="card">
+                            <div class="icon">&#129309;</div>
+                            <h3>Community</h3>
+                            <p>Game nights, LAN parties and a friendly space to meet people who love games.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <h2>Upcoming <span>events</span></h2>
+                    <div class="grid three" id="homeEvents"></div>
+                    <p style="margin-top: 1.4rem"><a href="events.html">View all events &rarr;</a></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <p class="socials">
+                    <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Discord</a> |
+                    <a href="#">WhatsApp</a>
+                </p>
+                <p>
+                    &copy; <span id="year">2026</span> HIT Gaming Club &middot; Harare Institute of Technology &middot;
+                    gaming@hit.ac.zw
+                </p>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

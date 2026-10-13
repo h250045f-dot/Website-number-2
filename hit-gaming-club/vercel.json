@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/admin", "destination": "/api/admin" },
+    { "source": "/admin.php", "destination": "/api/admin" },
+    { "source": "/process.php", "destination": "/api/submit" }
+  ]
+}

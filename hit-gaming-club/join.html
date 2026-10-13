@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="HIT Gaming Club - tournaments, workshops and community for student gamers." />
+        <title>Join / Contact | HIT Gaming Club</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="container">
+                <a class="logo" href="index.html">HIT<span>GAMING</span></a>
+                <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="join.html" class="active">Join / Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="page-title container">
+                <h1>Join or <span>Contact</span> Us</h1>
+                <p>Fill in the form below to become a member or send us a message. Fields marked * are required.</p>
+            </div>
+            <section>
+                <div class="container">
+                    <div class="card form-card">
+                        <form id="joinForm" action="/api/submit" method="post" novalidate>
+                            <label for="purpose">I want to *</label>
+                            <select id="purpose" name="purpose">
+                                <option value="join">Join the club</option>
+                                <option value="contact">Contact the committee</option>
+                            </select>
+
+                            <label for="fullname">Full name *</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="e.g. Tendai Moyo" />
+                            <span class="error" id="fullnameErr"></span>
+
+                            <div class="form-row">
+                                <div>
+                                    <label for="regnumber">Registration number *</label>
+                                    <input type="text" id="regnumber" name="regnumber" placeholder="e.g. H2400123A" />
+                                    <span class="error" id="regnumberErr"></span>
+                                </div>
+                                <div>
+                                    <label for="program">Programme *</label>
+                                    <select id="program" name="program">
+                                        <option value="">-- Select --</option>
+                                        <option>Software Engineering</option>
+                                        <option>Information Security &amp; Assurance</option>
+                                        <option>Information Systems</option>
+                                        <option>Computer Engineering</option>
+                                        <option>Other</option>
+                                    </select>
+                                    <span class="error" id="programErr"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div>
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" placeholder="you@example.com" />
+                                    <span class="error" id="emailErr"></span>
+                                </div>
+                                <div>
+                                    <label for="phone">Phone (optional)</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+263 77 123 4567" />
+                                    <span class="error" id="phoneErr"></span>
+                                </div>
+                            </div>
+
+                            <label>Games you play</label>
+                            <div class="checks">
+                                <label
+                                    ><input type="checkbox" name="games[]" value="Football (FIFA/eFootball)" />
+                                    Football</label
+                                >
+                                <label><input type="checkbox" name="games[]" value="Racing" /> Racing</label>
+                                <label><input type="checkbox" name="games[]" value="Fighting" /> Fighting</label>
+                                <label><input type="checkbox" name="games[]" value="FPS / Battle Royale" /> FPS</label>
+                                <label><input type="checkbox" name="games[]" value="Strategy / MOBA" /> Strategy</label>
+                                <label><input type="checkbox" name="games[]" value="Mobile games" /> Mobile</label>
+                            </div>
+
+                            <label for="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                maxlength="300"
+                                placeholder="Tell us about yourself or ask a question..."
+                            ></textarea>
+                            <span class="counter" id="counter">0 / 300</span>
+                            <span class="error" id="messageErr"></span>
+
+                            <label class="consent"
+                                ><input type="checkbox" id="consent" name="consent" value="yes" /> I agree to follow the
+                                club rules *</label
+                            >
+                            <span class="error" id="consentErr"></span>
+
+                            <button type="submit" class="btn" style="margin-top: 1rem">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <p class="socials">
+                    <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Discord</a> |
+                    <a href="#">WhatsApp</a>
+                </p>
+                <p>
+                    &copy; <span id="year">2026</span> HIT Gaming Club &middot; Harare Institute of Technology &middot;
+                    gaming@hit.ac.zw
+                </p>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

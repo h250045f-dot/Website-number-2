@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="HIT Gaming Club - tournaments, workshops and community for student gamers." />
+        <title>About Us | HIT Gaming Club</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="container">
+                <a class="logo" href="index.html">HIT<span>GAMING</span></a>
+                <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="join.html">Join / Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="page-title container">
+                <h1>About <span>Us</span></h1>
+                <p>Who we are, what we believe in and the people who keep the club running.</p>
+            </div>
+
+            <section>
+                <div class="container grid two">
+                    <div class="card">
+                        <h3>Who we are</h3>
+                        <p>
+                            The HIT Gaming Club was founded in 2024 by a group of students who wanted a structured,
+                            welcoming place to play, compete and learn about the games industry.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Our vision</h3>
+                        <p>
+                            To be the leading student gaming community in Zimbabwe, turning passion for games into
+                            skills, friendships and careers.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Our mission</h3>
+                        <p>
+                            To provide an inclusive platform where students can play, compete, create and grow through
+                            gaming and technology.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Our objectives</h3>
+                        <ul class="about-list">
+                            <li>Host regular tournaments and game nights</li>
+                            <li>Teach game development and design skills</li>
+                            <li>Promote teamwork, fair play and healthy gaming</li>
+                            <li>Represent HIT in inter-university esports</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <h2>Club <span>rules</span></h2>
+                    <ol class="about-list" style="list-style: decimal; padding-left: 1.4rem">
+                        <li style="padding-left: 0.3rem">Respect every member - no harassment or toxic behaviour.</li>
+                        <li style="padding-left: 0.3rem">Play fair - cheating leads to disqualification.</li>
+                        <li style="padding-left: 0.3rem">Look after lab equipment and venues.</li>
+                        <li style="padding-left: 0.3rem">Balance gaming with your studies.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <h2>Meet the <span>committee</span></h2>
+                    <div class="grid three">
+                        <div class="card member" onmouseover="highlight(this,true)" onmouseout="highlight(this,false)">
+                            <div class="avatar">P</div>
+                            <h3>President</h3>
+                            <p class="role">Club President</p>
+                            <p>Leads the club and represents members to the Students Union.</p>
+                        </div>
+                        <div class="card member" onmouseover="highlight(this,true)" onmouseout="highlight(this,false)">
+                            <div class="avatar">V</div>
+                            <h3>Vice President</h3>
+                            <p class="role">Operations</p>
+                            <p>Coordinates events, venues and logistics.</p>
+                        </div>
+                        <div class="card member" onmouseover="highlight(this,true)" onmouseout="highlight(this,false)">
+                            <div class="avatar">S</div>
+                            <h3>Secretary</h3>
+                            <p class="role">Administration</p>
+                            <p>Keeps records, minutes and member registrations.</p>
+                        </div>
+                        <div class="card member" onmouseover="highlight(this,true)" onmouseout="highlight(this,false)">
+                            <div class="avatar">T</div>
+                            <h3>Treasurer</h3>
+                            <p class="role">Finance</p>
+                            <p>Manages budgets, sponsorship and prize funds.</p>
+                        </div>
+                        <div class="card member" onmouseover="highlight(this,true)" onmouseout="highlight(this,false)">
+                            <div class="avatar">E</div>
+                            <h3>Esports Captain</h3>
+                            <p class="role">Competitive</p>
+                            <p>Runs team practice and inter-varsity entries.</p>
+                        </div>
+                        <div class="card member" onmouseover="highlight(this,true)" onmouseout="highlight(this,false)">
+                            <div class="avatar">M</div>
+                            <h3>Media Officer</h3>
+                            <p class="role">Publicity</p>
+                            <p>Manages social media, photos and streams.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <p class="socials">
+                    <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Discord</a> |
+                    <a href="#">WhatsApp</a>
+                </p>
+                <p>
+                    &copy; <span id="year">2026</span> HIT Gaming Club &middot; Harare Institute of Technology &middot;
+                    gaming@hit.ac.zw
+                </p>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

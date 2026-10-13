@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="HIT Gaming Club - tournaments, workshops and community for student gamers." />
+        <title>Events | HIT Gaming Club</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="container">
+                <a class="logo" href="index.html">HIT<span>GAMING</span></a>
+                <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html" class="active">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="join.html">Join / Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="page-title container">
+                <h1>Activities &amp; <span>Events</span></h1>
+                <p>Filter by type to find tournaments, workshops and social nights.</p>
+            </div>
+
+            <section>
+                <div class="container">
+                    <div class="filters">
+                        <button data-filter="all" onclick="renderEvents('all')">All</button>
+                        <button data-filter="tournament" onclick="renderEvents('tournament')">Tournaments</button>
+                        <button data-filter="workshop" onclick="renderEvents('workshop')">Workshops</button>
+                        <button data-filter="social" onclick="renderEvents('social')">Social</button>
+                    </div>
+                    <div class="grid three" id="eventList"></div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <h2>Weekly <span>sessions</span></h2>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Time</th>
+                                    <th>Activity</th>
+                                    <th>Venue</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday</td>
+                                    <td>17:00 - 19:00</td>
+                                    <td>Casual play &amp; open lab</td>
+                                    <td>Computer Lab 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                    <td>18:00 - 20:00</td>
+                                    <td>Esports team practice</td>
+                                    <td>Computer Lab 1</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>16:00 - 19:00</td>
+                                    <td>Console &amp; board game hour</td>
+                                    <td>Student Centre</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td>10:00 - 13:00</td>
+                                    <td>Game dev study group</td>
+                                    <td>Lecture Room B12</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <p class="socials">
+                    <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Discord</a> |
+                    <a href="#">WhatsApp</a>
+                </p>
+                <p>
+                    &copy; <span id="year">2026</span> HIT Gaming Club &middot; Harare Institute of Technology &middot;
+                    gaming@hit.ac.zw
+                </p>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
